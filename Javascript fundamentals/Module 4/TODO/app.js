@@ -23,4 +23,5 @@ taskInput.addEventListener("keypress", (event) => {
 // create element
 
 let li = document.createElement("li");
+li.textContent = "Learn js";
 console.log(li);
