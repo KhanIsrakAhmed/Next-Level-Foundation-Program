@@ -10,6 +10,12 @@ let taskList = document.getElementById("taskList");
 //   console.log("Add button clicked");
 // });
 
-addBtn.addEventListener("click", () => {
-  console.log(taskInput.value);
+// addBtn.addEventListener("click", () => {
+//   console.log(taskInput.value);
+// });
+
+taskInput.addEventListener("keypress", (event) => {
+  if (event.key === "Enter") {
+    console.log(taskInput.value);
+  }
 });
