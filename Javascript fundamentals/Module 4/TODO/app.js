@@ -11,5 +11,5 @@ let taskList = document.getElementById("taskList");
 // });
 
 addBtn.addEventListener("click", () => {
-  console.log("Add button clicked");
+  console.log(taskInput.value);
 });
