@@ -1,6 +1,11 @@
 const a = 20;
 const b = 6;
 
+
+
+const c = !(a<b) && 275;
+console.log(c);
+
 const sum = a + b;
 const difference = a - b;
 const product = a * b;
@@ -16,6 +21,8 @@ console.log("Product:", product);
 console.log("Quotient:", quotient);
 
 console.log("Remainder:", a % b);
+//  a + b - (c+f) * d / e
+
 
 let age = 25;
 
