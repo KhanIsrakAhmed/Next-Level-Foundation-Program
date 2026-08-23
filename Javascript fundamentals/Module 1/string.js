@@ -1,6 +1,22 @@
-let first_name = "Khan";
-let middle_name = "Israk";
-let last_name = "Ahmed";
+let firstName = "Khan";
+let middleName = "Israk";
+let lastName = "Ahmed";
 
-let full_name = first_name + " " + middle_name + " " + last_name;
-console.log(full_name);
+//let fullName = firstName + " " + middleName + " " + lastName;
+
+let fullName = `${firstName} ${middleName} ${lastName} \nDhaka Cantonment, Bangladesh`;
+
+console.log(fullName);
+
+console.log(middleName.length);
+
+let uni = "United International University";
+
+let randomstr = "Im a \"student\" of " +uni ;
+
+console.log(randomstr);
+
+
+console.log(uni.toUpperCase());
+
+console.log(randomstr.includes("student"));
