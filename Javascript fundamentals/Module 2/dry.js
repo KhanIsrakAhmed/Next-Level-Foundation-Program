@@ -31,4 +31,22 @@ function capitalized(str) {
 
 function processOrder(user, itemPrice, discountCode) {
   console.log(`---- processing order for ${capitalized(user.name)}----`);
+  if (!isValidEmail(user.email)) {
+    console.log("Error: Invalid user email");
+    return;
+  }
+
+  let currentPrice = itemPrice;
+
+  if (discountCode == "KIA100") {
+    currentPrice = calculateDiscount(itemPrice, 20);
+    console.log("20% discount applied");
+  }
+
+  let totalBill = finalBill(currentPrice);
+  console.log("Final amount to pay :", formatBDT(totalBill));
+  console.log("Order complited successfully");
 }
+
+let user1 = { name: "Israk", email: "israk.ahmed38@gmail.com" };
+processOrder(user1, 1990, "KIA100");
