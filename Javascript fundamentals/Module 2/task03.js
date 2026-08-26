@@ -19,4 +19,11 @@ function addStudent(name, age, dept) {
 }
 
 addStudent("Moudud", 31, "BsCivil");
-console.log(students);
+// console.log(students);
+
+function getAll() {
+  for (const student of students) {
+    console.log(student);
+  }
+}
+getAll();
