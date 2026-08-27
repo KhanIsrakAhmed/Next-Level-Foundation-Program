@@ -1,7 +1,9 @@
 
-if (true) {
-    let age;
-}
+// if (true) 
+//     {
+//     let age;
+// }
+let age;
 
 function sayAge() {
     age = 23;
