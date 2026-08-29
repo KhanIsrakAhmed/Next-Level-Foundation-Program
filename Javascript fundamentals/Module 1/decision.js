@@ -1,4 +1,4 @@
-// let age =23
+let age = 23;
 
 // if (age >= 18)
 // {
@@ -37,3 +37,5 @@ else if (mark >= 62) {
 else {
     console.log("Fail");
 }
+
+age >= 18 ? console.log("Voter") : console.log("Not Voter");
