@@ -12,3 +12,8 @@ function getDiscount(price) {
 console.log(
   `Total price ${price * qnantity - getDiscount(price)} bdt \nYou saved ${getDiscount(price)} bdt`,
 );
+
+let stock = 9;
+console.log(
+  `Status : ${stock > 0 ? "In stock" + " " + stock : "Out of stock"}`,
+);
