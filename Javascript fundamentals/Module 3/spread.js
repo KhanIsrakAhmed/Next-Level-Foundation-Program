@@ -9,15 +9,15 @@ let cart2 = [...cart, "milk"];
 
 console.log(cart, cart2);
 
-// const info = {
-//   name: "Israk",
-//   age: 24,
-// };
-// const contact = {
-//   email: "israk.ahmed38@gmail.com",
-//   phone: " 015********",
-// };
+const info = {
+  name: "Israk",
+  age: 24,
+};
+const contact = {
+  email: "israk.ahmed38@gmail.com",
+  phone: " 015********",
+};
 
-// const personalInfo = { ...info, ...contact };
+const personalInfo = { ...info, ...contact, zip: 1206 };
 
-// console.log(personalInfo);
+console.log(personalInfo);
