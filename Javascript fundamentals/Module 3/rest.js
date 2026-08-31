@@ -18,3 +18,9 @@ const obj = {
 const { name, ...remaining } = obj;
 
 console.log(remaining);
+
+const arr = [1, 2, 3, 100, 200];
+
+const [, , , ...rest] = arr;
+
+console.log(rest);
