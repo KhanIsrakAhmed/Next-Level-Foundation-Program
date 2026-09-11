@@ -13,5 +13,8 @@ let students = [
   { name: "Fahim", marks: 70 },
 ];
 
-let studentCheck = students.some((s) => s.marks > 80);
-console.log(studentCheck); // true
+let studentCheck = students.some((s) => s.marks > 90);
+console.log(studentCheck);
+
+let studentCheck2 = students.every((s) => s.marks > 40);
+console.log(studentCheck2);
