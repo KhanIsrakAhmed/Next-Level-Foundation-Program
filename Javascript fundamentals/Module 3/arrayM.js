@@ -16,3 +16,12 @@ let sorted = products.sort((a, b) => a.price - b.price); // asc
 // let sorted = [10, 30, 600, 35, 900, 20].sort((a, b) => a - b); // asc
 // let sorted = [10, 30, 600, 35, 900, 20].sort((a, b) => b - a); // desc
 console.log(sorted);
+
+// let estPrice = products.filter((p) => p.inStock == true).reduce((acc, cur)=>{return acc += curr},0);
+let estPrice = products
+  .filter((p) => p.inStock == true)
+  .reduce((acc, cur) => {
+    return (acc += cur.price);
+  }, 0);
+
+console.log(estPrice);
