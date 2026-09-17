@@ -11,9 +11,7 @@ let totalPrice = products.reduce((acc, current) => {
 
 console.log(totalPrice);
 
-let sorted = products.sort((a, b) => {
-  return a.price - b.price;
-});
+let sorted = products.sort((a, b) => a.price - b.price); // asc
 
 // let sorted = [10, 30, 600, 35, 900, 20].sort((a, b) => a - b); // asc
 // let sorted = [10, 30, 600, 35, 900, 20].sort((a, b) => b - a); // desc
