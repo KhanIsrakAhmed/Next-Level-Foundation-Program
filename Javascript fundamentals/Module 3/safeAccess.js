@@ -13,3 +13,6 @@ let user2 = {
 // optional chaining ?
 console.log(user1?.address?.city); // Dhaka
 console.log(user2?.address?.city);
+
+// nulish collescing ?? undefined or null hoi sekhetre
+console.log(user2?.address?.city ?? "Barishal"); // Barishal
